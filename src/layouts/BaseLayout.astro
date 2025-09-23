@@ -2,7 +2,8 @@
 import FooterComponent from '../components/Footer.astro';
 import HeaderComponent from '../components/Header.astro';
 
-const pageTitle = "Astro Basics";
+// const pageTitle = "Astro Basics";
+const { pageTitle } = Astro.props;
 ---
 <!doctype html>
 <html lang="en">
