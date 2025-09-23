@@ -1,4 +1,7 @@
 ---
+import FooterComponent from '../components/Footer.astro';
+import HeaderComponent from '../components/Header.astro';
+
 const pageTitle = "Astro Basics";
 ---
 <!doctype html>
@@ -11,7 +14,13 @@ const pageTitle = "Astro Basics";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<HeaderComponent />
 		<slot />
+		<FooterComponent />
+
+		<script>
+			import "../assets/scripts/menu.js"
+		</script>
 	</body>
 </html>
 
