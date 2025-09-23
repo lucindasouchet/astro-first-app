@@ -25,11 +25,15 @@ h1 {
 a {
   cursor: pointer;
   text-decoration: underline;
-  color: darkmagenta;
+  /* color: darkmagenta; */
+  background-image: linear-gradient(90deg, magenta, royalblue);
+   -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
 }
 
 span {
   cursor: default;
   text-decoration: none;
-  color: darkmagenta;
+  color: blueviolet;
 }
