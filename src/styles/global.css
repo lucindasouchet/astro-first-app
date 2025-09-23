@@ -1,11 +1,11 @@
 @import "tailwindcss";
 
-/* html {
+html {
   background-color: #f1f5f9;
   font-family: sans-serif;
-} */
+}
 
-/* body {
+body {
   margin: 0 auto;
   width: 100%;
   max-width: 80ch;
@@ -20,4 +20,16 @@
 h1 {
   margin: 1rem 0;
   font-size: 2.5rem;
-} */
+}
+
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: darkmagenta;
+}
+
+span {
+  cursor: default;
+  text-decoration: none;
+  color: darkmagenta;
+}
