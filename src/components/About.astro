@@ -49,13 +49,12 @@ const textCase = "uppercase";
   {goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </div>
 
-<style define:vars={{skillColor, fontWeight, textCase}}>
+<style is:global define:vars={{skillColor, fontWeight, textCase}}>
   h1 {
     color: purple;
     font-size: 4rem;
   }
   .skill {
-    /* color: green; */
     color: var(--skillColor);
     font-weight: var(--fontWeight);
     text-transform: var(--textCase);
