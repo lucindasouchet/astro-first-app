@@ -1,10 +1,17 @@
 ---
 import Home from '../components/Home.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import Greeting from '../components/Greeting';
 
 const pageTitle = "Home Page";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
 	<Home />
+
+  <!-- non hygrated component/island - without directive client:load -->
+  <!-- <Greeting messages={["Hi", "Hello", "Howdy", "Hey there"]} /> -->
+  
+  <!-- non hygrated component/island - without directive client:load -->
+  <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
 </BaseLayout>

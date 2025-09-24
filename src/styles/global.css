@@ -87,6 +87,18 @@ a:focus {
   background-color: lightslategray;
 }
 
+/************************************************* Theme icon *****/
+
+/**dark theme **/
+html.dark {
+  background-color: #0d0950;
+  color: #fff;
+}
+
+.dark .nav-links a {
+  color: #fff;
+}
+
 
 /************************************************* media queries *****/
 
